@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Appointment System</title>
+</head>
+<body>
+    <h1>Welcome to the Hospital Appointment System</h1>
+    <p>Please select your user type and provide your information:</p>
+
+    <form action="LoginServlet" method="post">
+        <label for="userType">User Type:</label>
+        <select name="userType" id="userType">
+            <option value="Patient">Patient</option>
+            <option value="Doctor">Doctor</option>
+        </select>
+        <br><br>
+
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required>
+        <br><br>
+
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" name="userName" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

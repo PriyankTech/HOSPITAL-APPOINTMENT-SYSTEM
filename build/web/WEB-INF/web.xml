@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PatientDashboard</servlet-name>
+        <servlet-class>PatientDashboard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DoctorDashboard</servlet-name>
+        <servlet-class>DoctorDashboard</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AppointmentCheck</servlet-name>
+        <servlet-class>AppointmentCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientDashboard</servlet-name>
+        <url-pattern>/PatientDashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoctorDashboard</servlet-name>
+        <url-pattern>/DoctorDashboard</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet-mapping>
+        <servlet-name>AppointmentCheck</servlet-name>
+        <url-pattern>/AppointmentCheck</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
